@@ -1,0 +1,11 @@
+[package]
+name = "lush-shell"
+version = "0.0.7"
+authors = ["Atthun Seeran R.A <idkatthun@gmail.com>"]
+edition = "2021"
+rust-version = "1.80"
+
+[dependencies]
+anyhow = "1.0.68"                                # error handling
+bytes = "1.3.0"                                  # helps manage buffers
+thiserror = "1.0.38"                             # error handling
