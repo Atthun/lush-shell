@@ -1,0 +1,26 @@
+[package]
+name = "lush"
+version = "0.1.0"
+authors = ["Atthun Seeran R.A <idkatthun@gmail.com>"]
+description = "A command-line shell that’s from the moon! One shell, infinite possibilities."
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[[bin]]
+name = "lush"
+path = "src/main.rs"
+
+[profile.dev]
+lto = true
+strip = true
+opt-level = 3
+codegen-units = 1
+
+[profile.release]
+lto = true
+strip = true
+debug = false
+opt-level = 3
+codegen-units = 1
